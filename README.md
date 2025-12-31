@@ -4,6 +4,7 @@ A collection of digital design modules written in Verilog shift register, counte
 
 ### 🔹 Simulation & EDA Tools
 ![Verilog](https://img.shields.io/badge/Verilog-EDA?style=for-the-badge)
+![GVim](https://img.shields.io/badge/GVim-019733?style=for-the-badge&logo=vim&logoColor=white)
 ![Xilinx Vivado](https://img.shields.io/badge/Xilinx_Vivado-FPGA-orange?style=for-the-badge&logo=xilinx&logoColor=white)
 
 ---
