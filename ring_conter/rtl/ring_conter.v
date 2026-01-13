@@ -1,0 +1,26 @@
+////////////--------Ring counter (with load)---------//////////////
+
+module ring_conter (clk, rst,load, d_in, count);
+	//parameter 
+	parameter N = 4;
+	
+	//input 
+	input clk, rst;
+	input load;
+	input[N-1:0] d_in;
+	
+	//output 
+	output reg[N-1:0] count;
+	
+	always@(posedge clk)
+		begin 
+			if(rst)
+				count <= 4'b0001;
+			else if(load)
+				count <= d_in;
+			else 
+				count <= {count[0], count[N-1:1]};
+		end 
+endmodule 
+				
+		
